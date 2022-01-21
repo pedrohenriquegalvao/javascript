@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro teste</title>
+    <style>
+        body {
+            background-color: rgb(202, 136, 136);
+            font: normal 15pt Arial;
+            color:black;
+        }
+        h1 {
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estou no momento testando</h1> 
+    <p>I'm now testing</p> 
+    <script>
+        alert('Bem-vindo ao meu teste!')
+        var nome = window.prompt('Qual seu nome?')
+        var idade = window.prompt('Quantos anos voce tem?')
+        var n1 = Number(window.prompt('Digite um número'))
+        var n2 = Number(window.prompt('Digite outro número'))
+        var s = n1 + n2
+        window.alert (`A soma de ${n1} e ${n2} é: ${s}`)
+        confirm('Você está curtindo o site?')
+        document.write(`Seu nome em maiúsculas é  ${nome.toUpperCase()} </br>`)
+        document.write(`Seu nome em minúsculas é  ${nome.toLowerCase()} </br>`)
+        document.write(`Sua idade é ${idade}`)
+    </script>
+</body>
+</html>

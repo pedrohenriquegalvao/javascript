@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+   <header>
+       <h1>Vamos contar?</h1>
+   </header>
+   <section>
+        <div id='dados'>
+            <!--NUMERO DE INICIO-->
+            <p id='pnum1'>
+                <label for="num1">Número inicial:</label>
+                <input type="number" name="inicio" id="txti"></br>
+            </p>
+            <!--NUMERO DE FIM-->
+            <p id='pnum2'>
+                <label for="num2">Número final:</label>
+                <input type="number" name="fim" id="txtf"></br>
+            </p>
+            <!--PASSOS-->
+            <p>
+                <label for="passos">Passos:</label>
+                <input type="number" name="passos" id="txtp">
+            </p>
+        </div>
+            <input type="button" value="Contar" onclick="contar()">
+        <div id='res'>
+            Preparando contagem...
+        </div>
+   </section>
+   <footer>
+        <p>&copy; FusionCompany</p> <!--&copy é o E comercial-->
+   </footer>
+   <script src="script.js"></script> 
+</body>
+</html>

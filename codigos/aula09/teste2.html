@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você está no meu teste</title>
+    <style>
+        body {
+            background-color: lightcoral;
+            font: normal 18pt Arial;      
+        }
+        h1 {
+            color:mediumslateblue;
+            font: normal 40pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>OLÁ PESSOA!</h1>
+    <p>Estou estudando JavaScript no momento.</p>
+    <p>Você poderia aprender também.</p>
+    <div id = 'msg'>Acompanhe abaixo:</div>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        var sexo = window.prompt('Qual é o seu sexo?')
+        var idade = Number(window.prompt('Qual a sua idade?'))
+        document.write('De acordo com sua idade você ' + (idade >= 18? '<strong>é de maior</strong><br/>' : '<strong>é de menor</strong><br/>'))
+        document.write('De acordo com seu sexo voce é '  + (sexo == 'Masculino' || 'masculino'? '<strong>homem</strong><br/>' : '<strong>mulher</strong><br/>'))
+        document.write(`O seu nome em maiúsculas é ${nome.toUpperCase()} `)
+        var d = window.document.getElementById('msg')
+        d.innerText = 'Novo acompanhe abaixo:'
+        d.style.color = 'white'
+        var corpo = window.document.body
+        corpo.style.background = 'lightblue'
+       
+    </script>
+</body>
+</html>

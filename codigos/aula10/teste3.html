@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isso é um teste</title>
+    <style>
+        div#area{
+            font: normal 18pt arial;
+            background-color: lightgreen;
+            width: 200px;
+            height: 200px;
+            line-height: 190px;
+            text-align: center;
+        }
+        div#area2 {
+            font: normal 23pt arial;
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin-top: 10px;
+            line-break: initial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+
+        }
+        div#res {
+            font: normal 18pt Arial;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id='area'>Faça algo..</div>
+    <div id='area2'>Faça algo!!!</div>-->
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id='res'>Resultado</div>
+    <script>
+        function somar(){
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res = document.querySelector('div#res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é: <strong>${s}</strong>`
+        }
+        /*var a2 = document.getElementById('area2')
+        var a = document.getElementById('area')
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        a.addEventListener('click', clicar)
+        a.addEventListener('mousedown', pressionar)
+        a2.addEventListener('mouseenter', entrar2)
+        a2.addEventListener('mouseout', sair2)
+        function entrar(){
+            a.innerText = 'Entrou!'
+            a.style.backgroundColor = 'lightgreen'
+        }
+        function sair(){
+            a.innerText = 'Saiu!'
+            a.style.backgroundColor = 'lightgreen'
+        }
+        function clicar(){
+            a.innerHTML = 'Clicou!'
+            a.style.backgroundColor = 'blue'
+        }
+        function pressionar(){
+            a.style.backgroundColor = 'lightblue'
+        }
+        function entrar2(){
+            a2.innerText = 'Entrou, OLÁ!'
+        }
+        function sair2(){
+            a2.innerText = 'Saiu, ATÉ!'
+        }*/
+    </script>
+</body>
+</html>

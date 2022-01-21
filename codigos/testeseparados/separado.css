@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(98, 98, 221);
+    font: normal 15pt Arial;
+}
+header{
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.877);
+}
+section{
+    background-color: rgba(211, 211, 211, 0.74);
+    border-radius: 10px;
+    width: 500px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 7px 7px 10px  rgba(0, 0, 0, 0.432);
+}
+div#primeiro{
+    text-align: center;
+}
+input#txt1{
+    font: normal 15pt Arial;
+}
+input#homem{
+    font: normal 15pt Arial;
+}
+input#mulher{
+    font: normal 15pt Arial;
+}
+div#res{
+    padding: 5px;
+}
+footer {
+    color: rgba(211, 211, 211, 0.74);
+    text-align: center;
+    font-style: italic;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.767);
+    
+}

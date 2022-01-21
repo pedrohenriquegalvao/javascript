@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando uso do Switch</title>
+</head>
+<body>
+    <h1>Aqui será testado o uso da condição switch!</h1>
+    <p>Por favor, preencha abaixo:</p>
+    Eu me chamo: <input type="text" name="txt1" id="txt1"> <br/>
+    Sigla do estado que moro: <input type="text" name="txt2" id="txt2">
+    <input type="button" value="Tudo pronto" onclick="clicar()">
+    <div id='res'>
+
+    </div>
+    
+    <script>
+        function clicar(){
+            var txtnome = document.querySelector('input#txt1')
+            var txtestado = document.querySelector('input#txt2')
+            var r = document.querySelector('div#res')
+            var nome = txtnome.value
+            var estado = txtestado.value
+            //r.innerText += `Olá, ${nome}! Você mora no estado ${estado}!`
+            switch (estado){
+                case 'PR':
+                r.innerHTML += `Olá, ${nome}! Você mora no estado do Paraná!`
+                r.innerHTML += '<p>Assim, você mora na região <strong>sul</strong> do Brasil!</p>'
+                break;
+                case 'SP':
+                r.innerHTML += `Olá, ${nome}! Você mora no estado de São Paulo!`
+                r.innerHTML += '<p>Assim, você mora na região <strong>sudoeste</strong> do Brasil!</p>'
+                break;
+                case 'AM':
+                r.innerHTML += `Olá, ${nome}! Você mora no estado do Amazonas!`
+                r.innerHTML += '<p>Assim, você mora na região <strong>norte</strong> do Brasil!</p>'
+                break;
+                case 'CE':
+                r.innerHTML += `Olá, ${nome}! Você mora no estado do Ceará!`
+                r.innerHTML += '<p>Assim, você mora na região <strong>nordeste</strong> do Brasil!</p>'
+                break;
+                default:
+                r.innerHTML += `<p>Peço perdão, ${nome}. <br/>Esse estado não está no nosso sistema<p>`
+            }
+        }
+    </script>
+</body>
+</html>

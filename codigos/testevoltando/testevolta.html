@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estou de volta!</title>
+    <link rel="stylesheet" href="volta.css">
+</head>
+<body>
+    <header>
+        <h1>Olá, mundo!</h1>
+    </header>
+    <section>
+        <div>
+            <p id='subtitulo'>Preencha os dados:</p>
+            <p> <label for="txtnome">Nome</label>
+                <input type="text" name="nome" id="txtnome">
+            </p>         
+            <p> <label for="nNasc">Data de nascimento</label> 
+                <input type="number" name="nNasc" id="nasc" min="0" max="2020">
+            </p>
+            <p>Sexo: 
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="Sex">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="Sex">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Avançar" onclick="Avançar()">
+            </p>
+        </div>
+        <div id='res'>
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy;FusionCompany</p>
+    </footer>
+    <script src="volta.js"></script>
+</body>
+</html>

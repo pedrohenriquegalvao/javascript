@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados</title>
+    <style>
+        body {
+            background-color:rgb(224, 181, 72);
+            color: white;
+            font: normal 15pt Arial;
+        }
+        h1  {
+            color: black;
+        }
+        div#começo  {
+            margin-bottom: 10px; 
+        }
+        input#txt1  {
+            margin-bottom: 10px;
+        }
+        input#botao {
+            margin-top: 10px;
+            font: normal 15pt arial;
+        }
+        div#res {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seja bem-vindo(a) ao meu teste de <br/>Estados Brasileiros!</h1>
+    <div id='começo'>Para começarmos, preencha os campos abaixo:</div>
+    Meu nome é: <input type="text" name="txt1" id="txt1"> <br/>
+    Eu moro no seguinte estado: <input type="text" name="txt2" id="txt2"> <br/>
+    <input type="button" value="Conferir região do país" onclick='conferir()' id='botao'>  
+    <div id='res'>
+
+    </div>
+    <script>
+        function conferir(){
+            var txtnome = document.querySelector('input#txt1')
+            var txtestado = document.querySelector('input#txt2')
+            var resultado = document.querySelector('div#res')
+            var e = txtestado.value
+            var nome = txtnome.value
+            //resultado.innerHTML += `<p>Você mora nesse estado: ${e}</p>`
+            if (e == 'Paraná' || e == 'Parana'){
+                resultado.innerHTML = `Olá ${nome}. <br/>Você mora na região <strong>sul</strong> do Brasil!`
+            } else if (e == 'SP' || e =='São Paulo'){
+                resultado.innerHTML = `Olá ${nome}. <br/>Você mora na região <strong>sudoeste</strong> do Brasil!`
+            } else {
+                resultado.innerHTML = `Olá ${nome}. <br/>Você mora na região <strong>norte, nordeste ou centro-oeste</strong> do Brasil!`
+            }
+            resultado.innerHTML += '<p>Se for dirigir, não beba!</p>'
+        }
+    </script>
+</body>
+</html>

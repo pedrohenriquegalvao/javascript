@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 4</title>
+    <style>
+        body {
+            font: normal 15pt Arial;
+        }
+        input#txt1 {
+            font: normal 15pt Arial;
+        }
+        input#botão1{
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Digite seu país de origem: <input type="text" name="txt1" id="txt1">
+    <input type="button" value="Verificar" onclick="ver()" id='botão1'>
+    <div id="res">
+
+    </div>
+    <script>
+        function ver(){
+            var txtp = document.querySelector('input#txt1')
+            var resultado = document.querySelector('div#res')
+            país = txtp.value
+            resultado.innerHTML = `<p>Você mora no ${país}</p>`
+            if (país != 'Brasil'){
+                resultado.innerHTML += '<p>Vocé é estrangeiro!</p>'
+            } else {
+                resultado.innerHTML += '<p>Você é Brasileiro!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
